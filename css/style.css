@@ -1,9 +1,36 @@
-h1 {
-    color: #32467b;
+
+@media (prefers-reduced-motion) {
+    .head1 {
+        color:#32467b;
+    }
+    .gif {
+        display: none;
+    }
+    
+}
+
+header h1 {
+    color: transparent;
     text-align: center;
     font-family: Courier, Arial, Impact;
     font-size: 50px;
     padding-bottom: 20px;
+    background-image: linear-gradient(to right, #32467b, #787878, #32467b);
+    -webkit-background-clip: text;
+    background-clip: text;    
+    background-size: 200%;
+    background-position: 100%;
+    animation: animated-gradient 5s linear infinite;
+}
+
+
+@keyframes animated-gradient{
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%; 
+    }
 }
 
 body {
@@ -82,10 +109,11 @@ a{
 
 .petpics {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
 }
 .petpics > :nth-child(n) {
     display: block;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
@@ -95,14 +123,16 @@ a{
 }
 .travelImage {
     max-width: 80%;
+    margin-top: 10px;
+}
+.gif {
+    max-width: 80%;
 }
 .recipieImage {
     max-width: 80%;
     margin-top: 15px;
 }
 .recipieBackground ul {
-    display: grid;
-    grid-template-columns: auto;
     text-align: left;
 }
 .recipieIng li {
@@ -111,12 +141,12 @@ a{
     padding-top: 3px;
     padding-bottom: 3px;
 }
-.recipeSteps li {
-    display: grid;
-    grid-template-columns: auto;
-    text-align: left;
+.recipeSteps ol {
     list-style-position: outside;
     list-style-type: decimal;
+}
+.recipeSteps li {
+    text-align: left;
     padding-top: 3px;
     padding-bottom: 3px;
 }
