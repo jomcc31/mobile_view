@@ -1,0 +1,179 @@
+h1 {
+    color: #32467b;
+    text-align: center;
+    font-family: Courier, Arial, Impact;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+body {
+    background-color: #bec4dd;
+    color: #32467b;
+}
+
+h2 {
+    color: #32467b;
+    font-family: Courier, Impact, Arial;
+    font-size: large;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    font-size: 35px;
+    text-align: center;
+}
+
+h3 {
+    color: #32467b;
+    font-family: Courier, Impact, Arial;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 30px;
+    border: 5px solid #9da6c8;
+}
+
+li {
+    margin-left: 10%;
+    margin-right: 7%;
+    font-weight: bold;
+    font-family: Courier, Impact, Arial;
+}
+
+a{
+    padding: 5px;
+}
+.skip {
+    display: none;
+}
+.navigation ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+.navigation a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+.navigation a:focus{
+    text-decoration: underline;
+    color: #000000;
+}
+.navigation a.active {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-bottom: 4px solid #000000;
+    border-radius: 5px;
+}
+
+.petpics {
+    display: grid;
+    grid-template-columns: auto;
+}
+.petpics > :nth-child(n) {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+} 
+.mainpetpic {
+    max-width: 80%;
+}
+.travelImage {
+    max-width: 80%;
+}
+.recipieImage {
+    max-width: 80%;
+    margin-top: 15px;
+}
+.recipieBackground ul {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: left;
+}
+.recipieIng li {
+    list-style-position: outside;
+    list-style-type: square;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.recipeSteps li {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: left;
+    list-style-position: outside;
+    list-style-type: decimal;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+@media (min-width: 800px) {
+
+    h1 {
+        color: #32467b;
+        text-align: center;
+        font-family: Courier, Arial, Impact;
+        font-size: 50px;
+    }
+    
+    body {
+        background-color: #bec4dd;
+        color: #32467b;
+    }
+    
+    h2 {
+        color: #32467b;
+        font-family: Courier, Impact, Arial;
+        font-size: large;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        font-size: 35px;
+    }
+    
+    h3 {
+        color: #32467b;
+        font-family: Courier, Impact, Arial;
+        font-size: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    p {
+        line-height: 25px;
+    }
+    
+    img {
+        margin: 20px;
+        padding: 10px;
+        border-top-right-radius: 30px;
+        border: 5px solid #9da6c8;
+    }
+    
+    li {
+        margin-left: 50px;
+        display: inline-block;
+        font-weight: bold;
+        font-family: Courier, Impact, Arial;
+    }
+    
+    a{
+        padding: 5px;
+    }
+
+}
